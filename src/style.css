@@ -84,7 +84,7 @@ html,body{
  }
  .style-font{
    font-family: 'Lato', sans-serif;
-   color: black;
+   color: #000000ad;
    font-size: 1.5vw;
  }
  .style-button{
@@ -100,6 +100,7 @@ html,body{
     margin-bottom: 10px;
     background-color: #eff7ef;
     margin-left: 3%;
+    color: black;
      }
 .style-water{
      background-image: url(./images/water.png);
@@ -321,7 +322,7 @@ html,body{
         color: white;
         font-size: 1.2vw;
         width: 44%;
-        text-align: 
+        text-align:center; 
 
       }
       .section-type{
@@ -357,6 +358,19 @@ html,body{
 
    footer {
    display: none;
+ }
+ .order-a{
+   background-color:yellow;
+ }
+ .order-z{
+  background-color:#0000ffa1;
+
+ }
+ .prom{
+   background-image: url(https://cdn5.dibujos.net/dibujos/pintados/201606/bombilla-la-casa-el-salon-10423275.jpg)
+ }
+ nav p{
+   margin-left: 5%;
  }
    @media screen and (max-width: 768px) {
    }

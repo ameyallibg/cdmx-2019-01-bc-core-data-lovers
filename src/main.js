@@ -6,8 +6,9 @@ const botonFilter = Array.from(document.getElementsByClassName("boton-filter"));
 const browser = document.getElementById("browser");
 const orderedButton = document.getElementById("orderedByAZ");
 const orderedReverseButton = document.getElementById("orderedByZA");
-const computeStats = document.getElementById("prom")
-const buttonNav = document.getElementById("buttonNav")
+const computeStats = document.getElementById("prom");
+const buttonNav = document.getElementById("buttonNav");
+const dataShow =document.getElementById("menuShow");
 
 botonMenu.addEventListener("click", showfilter)
 
@@ -113,9 +114,9 @@ orderedReverseButton.addEventListener("click", () => {
 
 computeStats.addEventListener("click", () => {
   const newProm = window.data.computeStats(pokemon)
-  const sectionRoot = returnFilter
+  const sectionRoot = dataShow
   sectionRoot.innerHTML = "";
-  sectionRoot.innerHTML += `<h1>Promedio de la Cantidad en la que aparecen todos los pokemons</h1><p>${newProm}</p>`
+  sectionRoot.innerHTML += `<h4>Promedio de dulces por pokemon</h4><p>${newProm}</p>`
   return sectionRoot
 
 });

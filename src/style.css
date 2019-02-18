@@ -371,6 +371,11 @@ html,body{
  }
  nav p{
    margin-left: 5%;
+   color: black;
+ }
+ h4{
+   font-size: 2vw;
+   color: #000000db;
  }
    @media screen and (max-width: 768px) {
    }

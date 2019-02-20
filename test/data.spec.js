@@ -131,7 +131,7 @@ describe('sortData', () => {
     it('is a function', () => {
       expect(typeof window.data.computeStats).toBe('function');
     });
-      it('Should return the average of avgSpawns', () => {
+      it('Should return the average of candyCount', () => {
         expect(window.data.computeStats(pokemon)).toBeCloseTo(21.766666666666666);
       });
   });

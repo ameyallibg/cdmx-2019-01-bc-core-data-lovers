@@ -8,7 +8,7 @@ const orderedButton = document.getElementById("orderedByAZ");
 const orderedReverseButton = document.getElementById("orderedByZA");
 const computeStats = document.getElementById("prom");
 const buttonNav = document.getElementById("buttonNav");
-const dataShow =document.getElementById("menuShow");
+const dataShow = document.getElementById("menuShow");
 
 botonMenu.addEventListener("click", showfilter)
 

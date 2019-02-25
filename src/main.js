@@ -1,5 +1,4 @@
-const pokemon = POKEMON.pokemon;
-var POKEMON = POKEMON;
+
 const botonMenu = document.getElementById('menuHide');
 const returnFilter = document.getElementById('returnFilter');
 const botonFilter = Array.from(document.getElementsByClassName("boton-filter"));
@@ -12,11 +11,29 @@ const dataShow = document.getElementById("menuShow");
 
 botonMenu.addEventListener("click", showfilter)
 
+const pokemonData = fetch('./data/pokemon/pokemon.json')
+
+let pokemon = [];
+
+pokemonData.then((response)=> {
+  
+  return response.json();
+})
+.then(data => {
+  
+  pokemon = data.pokemon
+  drawPokemon(pokemon) 
+  
+})
+
+
+
 function showfilter() {
 
   let menuShow = document.getElementById('menuShow');
   menuShow.classList.toggle("mostrar");
 }
+
 
 
 
@@ -44,7 +61,7 @@ const drawPokemon = (arrayPokemons) => {
     <div class="pokedex btnn " data-toggle="modal" data-target="#miModal${pokemon.name}" >
       <p>N°${pokemon.num}</p>
       <img src="${pokemon.img}"/>
-      <p>${pokemon.name}</p>
+      <p>${pokemon.name.toUpperCase()}</p>
       <p class="${pokemon.type[0]} tipoP">${pokemon.type}</p>
     </div>
 <div class="modal fade modalpokemon " id="miModal${pokemon.name}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -54,7 +71,7 @@ const drawPokemon = (arrayPokemons) => {
 				<button type="button" class="close " data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
-				<h4 class="modal-title White"  id="myModalLabel">${pokemon.name}</h4>
+				<h4 class="modal-title White"  id="myModalLabel">${pokemon.name.toUpperCase()}</h4>
 			</div>
 			<div class="modal-body">
       <img src="${pokemon.img}" class="imgpokemon"></br>

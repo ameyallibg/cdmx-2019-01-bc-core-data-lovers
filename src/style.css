@@ -234,7 +234,7 @@ html,body{
        }
 
        .modalWidth{
-        width: 50%;
+        width: 100%;
         text-align: center;
         background-color: #78c84f00;
         border-radius: 10px;
@@ -314,8 +314,9 @@ html,body{
     background-image: none;
        }
        .modalMargin{
-         margin-left: 40%;
-         margin-top: 10em;
+        margin-left: 40%;
+        margin-top: 10em;
+        width: 25%;
        }
       .weaknesses{
         background-color: #000000b8;
@@ -377,9 +378,13 @@ html,body{
    font-size: 2vw;
    color: #000000db;
  }
+ .modal-backdrop-in{
+   opacity: 0.7;
+  
+}
    @media screen and (max-width: 768px) {
    }
-   @media screen and (max-width: 480px) {
+   @media screen and (max-width: 680px) {
      body{
        margin: 0;
        padding: 0;
@@ -461,7 +466,7 @@ html,body{
       text-align: center;
       font-size: 3.5vw;
       display: inline-block;
-      height: 11em;
+      height: 12em;
      }
    .position-filter{
     display: none;
@@ -544,18 +549,14 @@ html,body{
      .tipoP{
      border-radius: 12px;
      border-style: solid;
-     background-color: black;
      color: white;
-     font-size: 2vw;
+     font-size: 2.8vw;
    }
 figure{
    position: relative;
    top: 43em;
    width: 55em;
    left: 27%;
-}
-.Grass {
-  color: #78c84f;
 }
 .pedia-kanto{
   background-image: url(https://fontmeme.com/permalink/190215/43106cf0497ff771e5229c84ee101b79.png);
@@ -584,10 +585,16 @@ footer i{
     color: #000000fa;
 }
 .modal-backdrop{
-  display: none
+  
 }
 nav i{
   margin-left: 28%;
   margin-top: 19px;
+}
+.weaknesses{
+  font-size: 3.5vw
+}
+h4{
+  font-size: 6vw;
 }
  }

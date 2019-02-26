@@ -390,7 +390,11 @@ html,body{
        padding: 0;
      }
      header {
-       display: none;
+       display: block;
+       height: 55em;
+       width: 100%;
+       position: absolute;
+       z-index: 60;
      }
    nav{
        background-color: #ffffff;
@@ -480,7 +484,7 @@ html,body{
     float: right;
     width: 49%;
     margin-top: 16px;
-    height: 39.6em;
+    height: 55em;
     position: fixed;
     padding-top: 8px;
     left: 51%;
@@ -502,11 +506,7 @@ html,body{
          margin-left: 10%;
          padding-top: 10em;
    }
-   .style-font{
-     font-family: 'Lato', sans-serif;
-     color: rgb(255, 255, 255);
-     font-size: 4vw;
-   }
+
    .style-button{
     outline: none;
     border: 0;
@@ -522,7 +522,6 @@ html,body{
     margin-bottom: 10px;
     padding-bottom: 10%;
     cursor: pointer;
-    background-color: #eff7ef;
     margin-left: 11%;
    }
    .style-button:hover{
@@ -573,10 +572,12 @@ figure{
 .modalMargin{
   margin-left: 20%;
   margin-top: 11em;
-  width: 113%; 
+  width: 60%; 
 }
 footer{
   display: block;
+  position: fixed;
+    z-index: 50;
 }
 footer i{
   margin-top: 14px;
@@ -585,6 +586,7 @@ footer i{
     color: #000000fa;
 }
 .modal-backdrop{
+  display:none
   
 }
 nav i{
@@ -597,4 +599,31 @@ nav i{
 h4{
   font-size: 6vw;
 }
+.imgpokemon{
+  background-color: white;
+
+
+}
+.pokepedia{
+  padding-left: 0%;
+  margin-top: -450px;
+  position: fixed;
+  width: 70%;
+  margin-left: -14%;
+}
+.p-welcome{
+  margin-top: 8em;
+    padding: 15%;
+    font-size: 7vw;
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    padding-top: 15%;
+    font-style: italic;
+
+}
+.style-font{
+  font-size: 5vw
+}
+
  }

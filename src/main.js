@@ -8,7 +8,7 @@ const orderedReverseButton = document.getElementById("orderedByZA");
 const computeStats = document.getElementById("prom");
 const buttonNav = document.getElementById("buttonNav");
 const dataShow = document.getElementById("menuShow");
-
+const headerTransition = document.getElementById("header");
 botonMenu.addEventListener("click", showfilter)
 
 const pokemonData = fetch('./data/pokemon/pokemon.json')
@@ -94,7 +94,7 @@ const drawPokemon = (arrayPokemons) => {
       <td>${pokemon.avg_spawns}</td>
       </tr>
       <tr>
-      <th class="weaknesses">Debilidades</th>
+      <td colspan="2" class="weaknesses">Debilidades</td>
       </tr>
       </table>
     <p >${pokemon.weaknesses}</p>
@@ -137,3 +137,5 @@ computeStats.addEventListener("click", () => {
   return sectionRoot
 
 });
+
+setTimeout(function(){headerTransition.style.display='none';},3000);

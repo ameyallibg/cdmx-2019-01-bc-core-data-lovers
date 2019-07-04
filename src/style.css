@@ -50,8 +50,8 @@ html,body{
  }
  .pedia-kanto{
     margin: 0px;
-    width: 21%;
-    margin-top: .7em;
+    width: 20%;
+    /* margin-top: .7em; */
     position: absolute;
     background-color: #fafafb;
     border: none;

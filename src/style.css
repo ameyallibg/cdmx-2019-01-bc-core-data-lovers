@@ -7,7 +7,7 @@ html,body{
      position: relative;
      grid-column: span 12;
   grid-row: span 1;
-  height: 380px;
+  height: 20em;
   background-image: url(https://c.wallhere.com/photos/18/04/Non_Non_Biyori_anime_landscape_nature-25919.png!d);
   background-size: cover;
   background-repeat: no-repeat;
@@ -49,18 +49,12 @@ html,body{
 
  }
  .pedia-kanto{
-   background-image: url(https://fontmeme.com/permalink/190214/2bcb36075214ece688ce6e8b396ca3e1.png);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
-   padding-left: 4%;
-       margin: 0px;
-       width: 16%;
-       margin-top: .7em;
-       position: absolute;
-       height: 3em;
-       background-color: #fafafb;
-       border: none;
+    margin: 0px;
+    width: 21%;
+    margin-top: .7em;
+    position: absolute;
+    background-color: #fafafb;
+    border: none;
  }
  .tipoP{
    border-radius: 12px;
@@ -323,7 +317,7 @@ html,body{
         color: white;
         font-size: 1.2vw;
         width: 44%;
-        text-align:center; 
+        text-align:center;
 
       }
       .section-type{
@@ -349,8 +343,8 @@ html,body{
     }
     .modal-body{
       padding: 1px;
-     
-      
+
+
     }
     .modal-header{
       border-top-left-radius: 10px;
@@ -380,7 +374,7 @@ html,body{
  }
  .modal-backdrop-in{
    opacity: 0.7;
-  
+
 }
    @media screen and (max-width: 768px) {
    }
@@ -390,7 +384,7 @@ html,body{
        padding: 0;
      }
      header {
-       display: block;
+       display: none;
        height: 55em;
        width: 100%;
        position: absolute;
@@ -444,7 +438,7 @@ html,body{
       margin-left: 27%;
       margin-top: 12px;
       padding-left: 5%;
-  
+
    }
    i{
     margin-top: 20px;
@@ -572,7 +566,7 @@ figure{
 .modalMargin{
   margin-left: 20%;
   margin-top: 11em;
-  width: 60%; 
+  width: 60%;
 }
 footer{
   display: block;
@@ -587,7 +581,7 @@ footer i{
 }
 .modal-backdrop{
   display:none
-  
+
 }
 nav i{
   margin-left: 28%;

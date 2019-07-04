@@ -57,7 +57,7 @@ const drawPokemon = (arrayPokemons) => {
   const sectionRoot = returnFilter
   sectionRoot.innerHTML = "";
   arrayPokemons.map((pokemon) => {
-    sectionRoot.innerHTML += `
+    sectionRoot.insertAdjacentHTML('beforeend',`
     <div class="pokedex btnn " data-toggle="modal" data-target="#miModal${pokemon.name}" >
       <p>N°${pokemon.num}</p>
       <img src="${pokemon.img}"/>
@@ -103,7 +103,7 @@ const drawPokemon = (arrayPokemons) => {
 		</div>
 	</div>
 </div>
-  `
+  `)
   })
 
 }
@@ -138,4 +138,4 @@ computeStats.addEventListener("click", () => {
 
 });
 
-setTimeout(function(){headerTransition.style.display='none';},3000);
+// setTimeout(function(){headerTransition.style.display='none';},10000);

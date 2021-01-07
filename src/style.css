@@ -7,11 +7,17 @@ html,body{
      position: relative;
      grid-column: span 12;
   grid-row: span 1;
-  height: 20em;
-  background-image: url(./images/pokemon.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+
+  background-image: url(./images/pokemon.png);
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0px;
   z-index: 21;
   opacity: .95;
@@ -42,7 +48,8 @@ html,body{
    }
    .pokepedia{
    padding-left: 36%;
-   padding-top: 60px;
+   padding-top: 80px;
+   padding-bottom: 80px;
    margin-top: 20px;
    position: relative;
      width: 70%

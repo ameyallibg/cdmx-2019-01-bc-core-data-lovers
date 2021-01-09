@@ -41,6 +41,7 @@ const getTypePokemon = (arrayButtons) => {
   arrayButtons.map((buttonType) => {
     buttonType.addEventListener("click", (event) => {
       const buttonType = event.target.id;
+      console.log(buttonType)
       const finalArrayPokemons = window.data.filterData(pokemon, buttonType)
       drawPokemon(finalArrayPokemons)
     })
@@ -55,6 +56,7 @@ buttonNav.addEventListener("click", () => {
 
 const drawPokemon = (arrayPokemons) => {
   const sectionRoot = returnFilter
+  console.log("sirvo")
   sectionRoot.innerHTML = "";
   arrayPokemons.map((pokemon) => {
     sectionRoot.insertAdjacentHTML('beforeend',`

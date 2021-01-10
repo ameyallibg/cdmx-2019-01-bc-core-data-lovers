@@ -45,6 +45,9 @@ const getTypePokemon = (arrayButtons) => {
       const finalArrayPokemons = window.data.filterData(pokemon, buttonType)
       drawPokemon(finalArrayPokemons)
     })
+    buttonType.addEventListener("mouseover", (event) => {
+      new Audio('./audio/boton2 (2).mp3').play();
+    })
   })
 }
 
@@ -139,5 +142,11 @@ computeStats.addEventListener("click", () => {
   return sectionRoot
 
 });
+
+
+
+// sonidos
+
+
 
 // setTimeout(function(){headerTransition.style.display='none';},10000);

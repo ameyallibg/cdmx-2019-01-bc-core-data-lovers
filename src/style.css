@@ -107,9 +107,10 @@ html,body{
   background-color: #eff7ef00;
   /* margin-left: 3%; */
   color: black;
+  padding:0px!important;
      }
 
-     .style-button:focus{
+ .style-button:focus{
       outline: none;
 
      }

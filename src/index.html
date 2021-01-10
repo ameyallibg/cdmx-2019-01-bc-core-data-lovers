@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>POKE-PDIA</title>
+  <script src="https://use.fontawesome.com/c4c385a34f.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -12,7 +13,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <a href="https://fontmeme.com/es/fuente-pokemon/"></a>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://use.fontawesome.com/c4c385a34f.js"></script>
+  
 </head>
 
 <body>
@@ -38,37 +39,39 @@
     <!-- <p class="p-welcome">La enciclopedia completa de la primera generacion de Kanto</p> -->
 
   
-
+    <!-- <p>Buscar por tipo</p> -->
 
     <section class="position-filter style-filter text-center " id="menuShow">
       <!-- <p class="style-font">Filtrar por tipo</p> -->
-      <button type="button"  class="mx-1 boton-filter style-button " ><img src="./images/water.png" id="Water"></button>
-      <button type="button"  class="mx-1 boton-filter style-button " ><img src="./images/electric.png" id="Electric"></button>
-      <button type="button"  class="mx-1 boton-filter style-button " ><img src="./images/roca.png" id="Rock"></button>
-      <button type="button"  class="mx-1 boton-filter style-button " ><img src="./images/grass.png" id="Grass"></button>
-      <button type="button"  class="mx-1 boton-filter style-button " ><img src="./images/psychic.png" id="Psychic"></button>
-      <button type="button"  class="mx-1 boton-filter style-button " ><img src="./images/poison.png" id="Poison"></button>
-      <button type="button"  class="mx-1 boton-filter style-button " ><img src="./images/ground.png" id="Ground"></button>
-      <button type="button"  class="mx-1 boton-filter style-button " ><img src="./images/fire.png" id="Fire"></button>
-      <button type="button"  class="mx-1 boton-filter style-button " ><img src="./images/ice.png" id="Ice"></button>
-      <button type="button"  class="mx-1 boton-filter style-button " ><img src="./images/dragon.png" id="Dragon"></button>
-      <button type="button"  class="mx-1 boton-filter style-button " ><img src="./images/ghost.png" id="Ghost"></button>
-      <button type="button"  class="mx-1 boton-filter style-button " ><img src="./images/normal.png" id="Normal"></button>
-      <button type="button"  class="mx-1 boton-filter style-button " ><img src="./images/fighting.png" id="Fighting"></button>
-      <button type="button"  class="mx-1 boton-filter style-button " ><img src="./images/flying.png" id="Flying"></button>
-      <button type="button"  class="mx-1 boton-filter style-button " ><img src="./images/bug.png " id="Bug"> </button>
+      <button type="button"  class="mx-1 boton-filter style-button " ><a href="#returnFilter"><img src="./images/water.png" id="Water"></a></button>
+      <button type="button"  class="mx-1 boton-filter style-button " ><a href="#returnFilter"><img src="./images/electric.png" id="Electric"></a></button>
+      <button type="button"  class="mx-1 boton-filter style-button " ><a href="#returnFilter"><img src="./images/roca.png" id="Rock"></a></button>
+      <button type="button"  class="mx-1 boton-filter style-button " ><a href="#returnFilter"><img src="./images/grass.png" id="Grass"></a></button>
+      <button type="button"  class="mx-1 boton-filter style-button " ><a href="#returnFilter"><img src="./images/psychic.png" id="Psychic"></a></button>
+      <button type="button"  class="mx-1 boton-filter style-button " ><a href="#returnFilter"><img src="./images/poison.png" id="Poison"></a></button>
+      <button type="button"  class="mx-1 boton-filter style-button " ><a href="#returnFilter"><img src="./images/ground.png" id="Ground"></a></button>
+      <button type="button"  class="mx-1 boton-filter style-button " ><a href="#returnFilter"><img src="./images/fire.png" id="Fire"></a></button>
+      <button type="button"  class="mx-1 boton-filter style-button " ><a href="#returnFilter"><img src="./images/ice.png" id="Ice"></a></button>
+      <button type="button"  class="mx-1 boton-filter style-button " ><a href="#returnFilter"><img src="./images/dragon.png" id="Dragon"></a></button>
+      <button type="button"  class="mx-1 boton-filter style-button " ><a href="#returnFilter"><img src="./images/ghost.png" id="Ghost"></a></button>
+      <button type="button"  class="mx-1 boton-filter style-button " ><a href="#returnFilter"><img src="./images/normal.png" id="Normal"></a></button>
+      <button type="button"  class="mx-1 boton-filter style-button " ><a href="#returnFilter"><img src="./images/fighting.png" id="Fighting"></a></button>
+      <button type="button"  class="mx-1 boton-filter style-button " ><a href="#returnFilter"><img src="./images/flying.png" id="Flying"></a></button>
+      <button type="button"  class="mx-1 boton-filter style-button " ><a href="#returnFilter"><img src="./images/bug.png " id="Bug"></a></button>
       <!-- <p class="style-font">Ordenar Pokemones:</p> -->
       <!-- <button type="button" id="orderedByAZ" class="style-button order-a">A-Z</button>
       <button type="button" id="orderedByZA" class="style-button order-z">Z-A</button>
       <button type="button" id="prom" class="style-button prom">prom</button> -->
       <p id="menuShow"></p>
   
-      
-    <i class="fas fa-arrow-circle-down"></i>
+  
       
     </section> 
    
-    
+    <a href="#returnFilter">
+    <img src="./images/abajo.png" style="float: right;
+    margin: 10px; margin-top:150px;">
+    </a>
   </header>
 </section>
 

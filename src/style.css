@@ -2,6 +2,7 @@ html,body{
      margin:0px;
      font-family: 'Lato', sans-serif;
      background-color: #d7ffd7;
+     scroll-behavior: smooth;
    }
    header {
      position: relative;

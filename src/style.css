@@ -319,7 +319,7 @@ transform:scale(1.25);
         background-color:#f7c9e3
        }
        .White{
-         background-color:white:
+         background-color:white;
        }
        .btnn{
     padding: 6px 12px;
@@ -411,8 +411,12 @@ transform:scale(1.25);
      padding: 0px!important;
      margin: 0px!important;
 }
-   @media screen and (max-width: 768px) {
-   }
+
+
+.modal-dialog {
+  max-width: 300px!important;
+
+}
    @media screen and (max-width: 680px) {
      body{
        margin: 0;

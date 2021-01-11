@@ -71,10 +71,10 @@ const drawPokemon = (arrayPokemons) => {
   </div>
   <div class="modal fade modalpokemon " id="miModal${pokemon.name}" tabindex="-1" role="dialog"
     aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modalMargin" role="document">
+    <div class="modal-dialog modal-dialog-centered " role="document">
       <div class="modal-content modalWidth">
         <div class="modal-header ${pokemon.type[0]}">
-        <h4 class="modal-title White mx-auto" id="myModalLabel">${pokemon.name.toUpperCase()}</h4>
+        <h4 class="modal-title  mx-auto" id="myModalLabel">${pokemon.name.toUpperCase()}</h4>
           <button type="button" class="close " data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>

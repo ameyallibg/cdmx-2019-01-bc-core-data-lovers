@@ -63,51 +63,56 @@ const drawPokemon = (arrayPokemons) => {
   sectionRoot.innerHTML = "";
   arrayPokemons.map((pokemon) => {
     sectionRoot.insertAdjacentHTML('beforeend',`
-    <div class="pokedex btnn " data-toggle="modal" data-target="#miModal${pokemon.name}" >
-      <p>N°${pokemon.num}</p>
-      <img src="${pokemon.img}"/>
-      <p>${pokemon.name.toUpperCase()}</p>
-      <p class="${pokemon.type[0]} tipoP">${pokemon.type}</p>
+    <div class="pokedex btnn " data-toggle="modal" data-target="#miModal${pokemon.name}">
+    <p>N°${pokemon.num}</p>
+    <img src="${pokemon.img}" />
+    <p>${pokemon.name.toUpperCase()}</p>
+    <p class="${pokemon.type[0]} tipoP">${pokemon.type}</p>
+  </div>
+  <div class="modal fade modalpokemon " id="miModal${pokemon.name}" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modalMargin" role="document">
+      <div class="modal-content modalWidth">
+        <div class="modal-header ${pokemon.type[0]}">
+        <h4 class="modal-title White mx-auto" id="myModalLabel">${pokemon.name.toUpperCase()}</h4>
+          <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+         
+        </div>
+
+        <div class="modal-body">
+          <img src="${pokemon.img}" class="imgpokemon"></br>
+          <section class="${pokemon.type[0]} section-type">
+            <table style="width:80%" class="${pokemon.type[0]} table-type">
+              <tr>
+                <th class="weaknesses">Height</th>
+                <th class="weaknesses">Weight</th>
+              </tr>
+              <tr>
+                <td>${pokemon.height}</td>
+                <td>${pokemon.weight}</td>
+              </tr>
+              <tr>
+                <th class="weaknesses">Candy Count</th>
+                <th class="weaknesses">Spawns</th>
+              </tr>
+              <tr>
+                <td>${pokemon.candy_count}</td>
+                <td>${pokemon.avg_spawns}</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="weaknesses">Weaknesses</td>
+              </tr>
+            </table>
+            <p>${pokemon.weaknesses}</p>
+          </section>
+        </div>
+      </div>
     </div>
-<div class="modal fade modalpokemon " id="miModal${pokemon.name}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog modalMargin" role="document">
-		<div class="modal-content modalWidth">
-			<div class="modal-header ${pokemon.type[0]}">
-				<button type="button" class="close " data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-				<h4 class="modal-title White"  id="myModalLabel">${pokemon.name.toUpperCase()}</h4>
-			</div>
-			<div class="modal-body">
-      <img src="${pokemon.img}" class="imgpokemon"></br>
-      <section class="${pokemon.type[0]} section-type">
-      <table style="width:80%" class="${pokemon.type[0]} table-type">
-      <tr>
-      <th class="weaknesses">Altura</th>
-      <th class="weaknesses">Peso</th>
-      </tr>
-      <tr>
-      <td>${pokemon.height}</td>
-      <td>${pokemon.weight}</td>
-      </tr>
-      <tr>
-      <th class="weaknesses">Dulces</th>
-      <th class="weaknesses">Apariciones</th>
-      </tr>
-      <tr>
-      <td>${pokemon.candy_count}</td>
-      <td>${pokemon.avg_spawns}</td>
-      </tr>
-      <tr>
-      <td colspan="2" class="weaknesses">Debilidades</td>
-      </tr>
-      </table>
-    <p >${pokemon.weaknesses}</p>
-    </section>
-			</div>
-		</div>
-	</div>
-</div>
+  </div>
+
+
   `)
   })
 

@@ -76,21 +76,22 @@ html,body{
    width: 100%;
  }
  .style-filter{
-   /* z-index: 20;
+    /* z-index: 20;
    float: left;
    width: 20%;
    height: 43em;
    position: relative;
    padding-top: 21px;
-   margin-top: -110px;
-   color: #d5e0d5;
-   margin-left: 0%;
-   background-color: #eff7ef;
-   overflow:auto; */
+   margin-top: -110px; */
+   /* color: #d5e0d5; */
+   /* margin-left: 0%; */
+   /* background-color: #eff7ef; */
+   /* overflow:auto;  */
 
    /* top: 60px;
    position: fixed;
    z-index: 50; */
+   display: none;
  }
  .style-font{
    font-family: 'Lato', sans-serif;
@@ -465,10 +466,11 @@ transform:scale(1.25);
     margin-left: 1%;
     position: relative;
     z-index: 40;
-    top: 6px;
+    top: 13px;
     border-radius: 5px;
     background-color: white;
     border: none;
+    float: right;
      }
      .browser{
       border-radius: 7px;
@@ -512,15 +514,19 @@ transform:scale(1.25);
      display: block;
    }
    .style-filter{
-    /* z-index: 9;
+
+    z-index: 9;
     color: #d5e0d5;
     float: right;
     width: 49%;
-    margin-top: 16px;
-    height: 55em;
+    margin-top: 63px;
+    background-color: #eff7ef;
+    height: 43em;
     position: fixed;
     padding-top: 8px;
-    left: 51%; */
+    left: 51%;
+    overflow: scroll;
+    
    }
    .containerMenu{
      height: 25px;
@@ -552,14 +558,21 @@ transform:scale(1.25);
     margin-top: 1px;
     height: 10em;
     width: 33%;
-    margin-bottom: 10px;
+    margin-bottom: 21px;
     padding-bottom: 10%;
     cursor: pointer;
     margin-left: 11%;
+    
    }
    .style-button:hover{
      background-color: rgb(239, 247, 239);
      color: rgb(1, 1, 1);
+     -webkit-transform:scale(1.02);
+     -moz-transform:scale(1.02);
+     -ms-transform:scale(1.02);
+     -o-transform:scale(1.02);
+     transform:scale(1.02);
+     opacity: .6;
    }
      .return{
        margin-left: 0;
@@ -599,7 +612,7 @@ figure{
   background-color: #fafafb;
   border: none;
     padding-left: 10%;
-    margin-left: -11.5%;
+    margin-left: -11%;
 
 }
 .modalMargin{
@@ -657,6 +670,9 @@ h4{
 }
 .style-font{
   font-size: 5vw
+}
+.modal-dialog {
+  max-width: none!important;
 }
 
  }
